@@ -8,4 +8,11 @@ public class PessoaFuncionaria {
   private String cpf;
   private String endereco;
   private double salario;
+
+  public PessoaFuncionaria(String nome, String cpf, String endereco, double salario) {
+    this.nomeCompleto = nome;
+    this.cpf = cpf;
+    this.endereco = endereco;
+    this.salario = salario;
+  }
 }
