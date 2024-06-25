@@ -6,23 +6,40 @@ Lista de Exercícios - Programação Orientada a Objetos são 3 atividades focad
 
 <br>
 
-Readme Trybe
-
-# Lista Exercício Orientação a Objetos - Java
-
-Boas-vindas ao repositório do exercício Lista Exercício Orientação a Objetos - Java
-
-Para realizar o exercício, atente-se a cada passo descrito a seguir e se tiver **qualquer dúvida**, nos envie no _Slack_ da turma! #vqv 🚀
-
-Aqui, você vai encontrar os detalhes de como estruturar o desenvolvimento do seu exercício a partir desse repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos.
-
-## Termos e acordos
-Ao iniciar este exercício, você concorda com as diretrizes do [Código de Conduta e do Manual da Pessoa Estudante da Trybe](https://app.betrybe.com/learn/student-manual/codigo-de-conduta-da-pessoa-estudante).
-
-## Entregáveis
+## 📑 Informações básicas e Orientações 📑
 
 <details>
-  <summary>🤷🏽‍♀️ Como entregar</summary><br />
+  <summary><strong>⚙️ Técnologias usadas ⚙️</strong></summary><br>
+
+* Java;
+* Maven;
+</details>
+
+<details>
+  <summary><strong>⌨️ Instalando Dependências ⌨️</strong></summary><br>
+
+Execute: `maven install`
+</details>
+<!--
+<details>
+  <summary><strong>🛠 Executando Testes 🛠</strong></summary><br>
+  
+  Para executar todos os testes basta rodar o comando: `mvn test`
+  
+  Para executar apenas uma classe de testes: `mvn test -Dtest="TestClassName"`
+</details>
+-->
+
+<br>
+
+## 👥 Informações gerais 👥
+
+### 🤵‍♀️ Sistema de Recursos Humanos 🤵‍♀️
+
+[//]: # (A 1° para cadastrar, ver e alterar as informações do funcionários)
+
+Readme Trybe
+mmary><br />
 
 Para entregar o seu exercício, você deverá criar um _Pull Request_ neste repositório.
 
