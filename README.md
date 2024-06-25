@@ -44,7 +44,7 @@ A classe `PessoaFuncionaria` é focada em cadastrar funcionários, ver e alterar
 <details>
   <summary><strong>💁‍♀️ Cadastrar Funcionário 💁‍♀️</strong></summary><br>
 
-Para cadastrar um funcionário, deve chamar a classe `PessoaFuncionaria` mandando os seguintes parâmetros:
+Para cadastrar um funcionário deve chamar a classe `PessoaFuncionaria` mandando os seguintes parâmetros:
 1. `nomeCompleto` é o nome completo do funcionário e é do tipo `String`;
 2. `cpf` é o cpf do funcionário e é do tipo `String`;
 3. `endereco` é o endereço do funcionário e é do tipo `String`;
@@ -72,48 +72,50 @@ Para alterar as informações do funcionário que você criou, pegue o funcioná
 <strong>OBS:</strong> O `CPF` NÃO PODE SER ALTERADO.
 </details>
 
-Readme Trybe
-
-### 2. Conta Poupança
+### 🏦 Conta Poupança 🏦
 
 <details>
-  <summary>Descrição</summary><br />
+    <summary><strong>🗒️ Sobre 🗒️</strong></summary>
 
-Suponha que você está trabalhando em uma equipe responsável pela construção de um sistema bancário e deve desenvolver a classe que representa a conta poupança. Como missão dada é missão cumprida, implemente a classe `ContaPoupanca` do pacote `com.trybe.acc.contapoupanca`, que deve contemplar os seguintes aspectos:
+A classe `ContaPoupanca` é focada em criar uma conta poupança, sacar, depositar, mostrar o saldo da conta e mostrar o nome do dono da conta.
 
-- Atributos:
-    - `saldo`: atributo do tipo `double` para armazenar o valor em dinheiro que a conta possui;
-    - `titularConta`: atributo do tipo `String` para armazenar o nome da pessoa portadora da conta.
-
-- Métodos:
-    - `depositar`: esse método é responsável por receber um valor do tipo `double` e somá-lo ao saldo da conta;
-    - `sacar`: esse método é responsável por receber um valor do tipo `double` e subtraí-lo do saldo da conta;
-    - `mostrarSaldo`: esse método deve retornar um valor do tipo `double` representando o saldo da conta.
-    - `mostrarTitularConta`: esse método deve retornar o nome da pessoa titular da conta.
-
-Essa conta poupança tem duas restrições a serem levadas em conta no seu projeto:
-
-- ela só pode ser aberta se um depósito for feito no momento da sua abertura;
-- ela deve ter o nome da pessoa titular da conta.
-
-Requisitos:  
-1 - Criar uma classe ContaPoupanca  
-2 - Implementar o método 'depositar'  
-3 - Implementar o método 'sacar'  
-4 - Implementar o método 'mostrarSaldo'  
-5 - Implementar o método 'mostrarTitularConta'
-
-**Dica: use o construtor para adicionar o valor do depósito inicial ao saldo na abertura da conta e o nome da pessoa titular da conta.**
-
-Por exemplo,
-
-Considerando que uma pessoa abra a conta poupança com o valor inicial de R$ 50, cada método deve se comportar da seguinte maneira:
-
-- `depositar`: supondo que o saldo da conta seja R$ 50 e na chamada do método `depositar` seja passado o valor de R$ 100 como argumento, o método deve somar o valor 100 ao saldo, fazendo o valor do saldo ser atualizado para 150;
-- `sacar`: supondo que o saldo da conta seja R$ 50 e na chamada do método `sacar` seja passado o valor de R$ 30 como argumento, o método deve subtrair o valor 30 do saldo, fazendo o valor do saldo ser atualizado para 20;
-- `mostrarSaldo`: supondo que o saldo da conta seja R$ 50, então o retorno desse método deve ser 50.
-- `mostrarTitularConta`: supondo que o nome da pessoa dona da conta seja Carla Pereira, esse método deve retornar um valor do tipo `String` contendo `Carla Pereira`.
 </details>
+<details>
+<summary><strong>Cadastrar Conta Poupança</strong></summary>
+
+Para cadastrar uma conta poupança deve chamar a classe `ContaPoupanca` mandando os parâmetros:
+1. `titularConta` é o nome do dono da conta e é do tipo `String`;
+2. `saldo` é o valor em dinheiro que a conta possui e é do tipo `double`.
+
+</details>
+<details>
+<summary><strong>Depositar</strong></summary>
+
+Para depositar, deve chamar a função `depositar()` utilizando a conta criada, mandando o valor que gostaria de depositar que deve ser do tipo `double`. O código irá somar com o saldo da conta.
+
+</details>
+<details>
+<summary><strong>Sacar</strong></summary>
+
+Para sacar, deve chamar a função `sacar()` utilizando a conta criada, mandando o valor que gostaria de depositar que deve ser do tipo `double`. O código irá subtrair com o saldo da conta.
+
+</details>
+
+<details>
+<summary><strong>Mostrar o Saldo</strong></summary>
+
+Para mostrar o saldo, deve chamar a função `mostrarSaldo()` utilizando a conta criada.
+
+</details>
+<details>
+<summary><strong>Mostrar o Titular da Conta</strong></summary>
+
+Para mostrar o nome do titular da conta, deve chamar a função `mostrarTitularConta()` utilizando a conta criada.
+
+</details>
+
+Readme Trybe
+
 
 ### 3. Pessoa Usuárias
 
