@@ -23,4 +23,13 @@ public class PessoaFuncionaria {
   public void setNomeCompleto(String nome) {
     this.nomeCompleto = nome;
   }
+
+  public String getCpf() {
+    return this.cpf;
+  }
+
+  //    5 - Crie um método getter para o atributo endereco de PessoaFuncionaria.
+  //    6 - Crie um método setter para o atributo endereco de PessoaFuncionaria.
+  //    7 - Crie um método getter para o atributo salario de PessoaFuncionaria.
+  //    8 - Crie um método setter para o atributo salario de PessoaFuncionaria.
 }
