@@ -15,7 +15,7 @@ public class PessoaUsuaria extends Pessoa {
     boolean name = nome == null || nome.isEmpty();
     boolean lastname = sobrenome == null || sobrenome.isEmpty();
 
-    if(name || lastname) {
+    if (name || lastname) {
       return "Pessoa usuária inválida";
     } else {
       String nomeCompleto = nome + "." + sobrenome;
