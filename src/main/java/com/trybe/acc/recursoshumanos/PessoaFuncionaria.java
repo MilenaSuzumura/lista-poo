@@ -15,4 +15,12 @@ public class PessoaFuncionaria {
     this.endereco = endereco;
     this.salario = salario;
   }
+
+  public String getNomeCompleto() {
+    return this.nomeCompleto;
+  }
+
+  public void setNomeCompleto(String nome) {
+    this.nomeCompleto = nome;
+  }
 }
