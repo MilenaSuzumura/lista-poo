@@ -1,5 +1,11 @@
 ## 📋 Lista de Exercícios - Programação Orientada a Objetos 📋
 
+Lista de Exercícios - Programação Orientada a Objetos são 3 atividades focadas em Programação Orientada a Objetos. 
+
+<strong>OBS:</strong> ESSA ATIVIDADE FOI DESENVOLVIDA NA TRYBE.
+
+<br>
+
 Readme Trybe
 
 # Lista Exercício Orientação a Objetos - Java
