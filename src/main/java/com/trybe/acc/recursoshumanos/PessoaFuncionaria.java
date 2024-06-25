@@ -28,8 +28,18 @@ public class PessoaFuncionaria {
     return this.cpf;
   }
 
-  //    5 - Crie um método getter para o atributo endereco de PessoaFuncionaria.
-  //    6 - Crie um método setter para o atributo endereco de PessoaFuncionaria.
+  public void setCpf(String cpf) {
+    this.cpf = cpf;
+  }
+
+  public String getEndereco() {
+    return this.endereco;
+  }
+
+  public void setEndereco(String endereco) {
+    this.endereco = endereco;
+  }
+
   //    7 - Crie um método getter para o atributo salario de PessoaFuncionaria.
   //    8 - Crie um método setter para o atributo salario de PessoaFuncionaria.
 }
