@@ -16,6 +16,7 @@ public class ContaPoupanca {
     return this.saldo;
   }
 
-  // mostrarTitularConta: esse método deve retornar o nome da pessoa titular da conta.
-
+  public String mostrarTitularConta() {
+    return this.titularConta;
+  }
 }
