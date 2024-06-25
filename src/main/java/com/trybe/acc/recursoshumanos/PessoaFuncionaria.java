@@ -9,11 +9,12 @@ public class PessoaFuncionaria {
   private String endereco;
   private double salario;
 
-  public PessoaFuncionaria(String nome, String cpf, String endereco, double salario) {
+  public PessoaFuncionaria(String nome, String Cpf, String Endereco, double Salario)
+  {
     this.nomeCompleto = nome;
-    this.cpf = cpf;
-    this.endereco = endereco;
-    this.salario = salario;
+    this.cpf = Cpf;
+    this.endereco = Endereco;
+    this.salario = Salario;
   }
 
   public String getNomeCompleto() {
@@ -28,23 +29,19 @@ public class PessoaFuncionaria {
     return this.cpf;
   }
 
-  public void setCpf(String cpf) {
-    this.cpf = cpf;
-  }
-
   public String getEndereco() {
     return this.endereco;
   }
 
-  public void setEndereco(String endereco) {
-    this.endereco = endereco;
+  public void setEndereco(String Endereco) {
+    this.endereco = Endereco;
   }
 
   public double getSalario() {
     return this.salario;
   }
 
-  public void setSalario(double salario) {
-    this.salario = salario;
+  public void setSalario(double Salario) {
+    this.salario = Salario;
   }
 }
