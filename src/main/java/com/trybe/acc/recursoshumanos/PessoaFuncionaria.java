@@ -40,6 +40,11 @@ public class PessoaFuncionaria {
     this.endereco = endereco;
   }
 
-  //    7 - Crie um método getter para o atributo salario de PessoaFuncionaria.
-  //    8 - Crie um método setter para o atributo salario de PessoaFuncionaria.
+  public double getSalario() {
+    return this.salario;
+  }
+
+  public void setSalario(double salario) {
+    this.salario = salario;
+  }
 }
