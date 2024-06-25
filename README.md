@@ -30,199 +30,49 @@ Execute: `maven install`
 </details>
 -->
 
-<br>
-
 ## 👥 Informações gerais 👥
 
-### 🤵‍♀️ Sistema de Recursos Humanos 🤵‍♀️
+### 💼 Sistema de Recursos Humanos 💼️
 
-[//]: # (A 1° para cadastrar, ver e alterar as informações do funcionários)
+<details>
+    <summary><strong>🗒️ Sobre 🗒️</strong></summary>
+
+A classe `PessoaFuncionaria` é focada em cadastrar funcionários, ver e alterar as informações cadastradas. São elas: nome completo, cpf, endereço e salário.
+
+</details>
+
+<details>
+  <summary><strong>💁‍♀️ Cadastrar Funcionário 💁‍♀️</strong></summary><br>
+
+Para cadastrar um funcionário, deve chamar a classe `PessoaFuncionaria` mandando os seguintes parâmetros:
+1. `nomeCompleto` é o nome completo do funcionário e é do tipo `String`;
+2. `cpf` é o cpf do funcionário e é do tipo `String`;
+3. `endereco` é o endereço do funcionário e é do tipo `String`;
+4. `salario` é o salário do funcionário e é do tipo `double`.
+
+</details>
+<details>
+<summary><strong>💁‍♂️ Visualizar Informações do funcionário 💁‍♂️</strong></summary>
+
+Para visualizar as informações do funcionário que você criou, pegue o funcionário que você acabou de criar e acesse o `getter`.
+1. `getNomeCompleto()` retornará `Nome completo`;
+2. `getCpf()` retornará `CPF`;
+3. `getEndereco()` retornará `Endereço`;
+4. `getSalario()` retornará `Salário`;
+
+</details>
+<details>
+<summary><strong>💁 Alterar Informações do funcionário 💁</strong></summary>
+
+Para alterar as informações do funcionário que você criou, pegue o funcionário que você acabou de criar e acesse o `setter`.
+1. `setNomeCompleto()` altera o `Nome completo` e precisa enviar um parâmetro tipo `String`;
+2. `setEndereco()` altera o `Endereço` e precisa enviar um parâmetro tipo `String`;
+3. `setSalario()` altera o `Salário` e precisa enviar um parâmetro tipo `double`;
+
+<strong>OBS:</strong> O `CPF` NÃO PODE SER ALTERADO.
+</details>
 
 Readme Trybe
-mmary><br />
-
-Para entregar o seu exercício, você deverá criar um _Pull Request_ neste repositório.
-
-Lembre-se que você pode consultar nosso conteúdo sobre [Git & GitHub](https://app.betrybe.com/learn/course/5e938f69-6e32-43b3-9685-c936530fd326/module/fc998c60-386e-46bc-83ca-4269beb17e17/section/fe827a71-3222-4b4d-a66f-ed98e09961af/day/1a530297-e176-4c79-8ed9-291ae2950540/lesson/2b2edce7-9c49-4907-92a2-aa571f823b79) e nosso [Blog - Git & GitHub](https://blog.betrybe.com/tecnologia/git-e-github/) sempre que precisar!
-</details>
-
-<details>
-  <summary>👨‍💻 O que deverá ser desenvolvido</summary><br />
-
-Esta é uma lista de exercícios, ou seja, cada um dos requisitos que iremos apresentar terá um contexto totalmente diferente entre si.
-
-Nosso objetivo é explorar e praticar a lógica de programação.
-
-</details>
-
-<details>
-  <summary><strong>:memo: Habilidades a serem trabalhadas</strong></summary>
-
-Neste exercício, verificamos se você é capaz de:
-
-Utilizar conceitos de abstração para criar classes em Java.
-
-Implementar getters e setters em classes de programação para acessar e modificar atributos.
-
-Utilizar o encapsulamento para ocultar o estado interno de um objeto e a herança para criar classes derivadas de outras classes.
-
-</details>
-
-## Orientações
-
-<details>
-
-   <summary><strong>‼ Antes de começar a desenvolver </strong></summary>
-
-1. Clone o repositório
-
-- Use o comando: `git clone <url do repositório>`
-- Entre na pasta do repositório que você acabou de clonar:
-    - `cd <nome do repositório>`
-
-2. Instale as dependências
-
-    - `mvn install`
-
-3. Crie uma branch a partir da branch `main`
-
-- Verifique que você está na branch `main`
-    - Exemplo: `git branch`
-- Se você não estiver, mude para a branch `main`
-    - Exemplo: `git checkout main`
-- Agora, crie uma branch à qual você vai submeter os `commits` do seu exercício:
-    - Você deve criar uma branch no seguinte formato: `nome-sobrenome-nome-do-exercício`;
-    - Exemplo: `git checkout -b maria-soares-lessons-learned`
-
-4. Crie na raiz do exercício os arquivos que você precisará desenvolver:
-
-- Verifique que você está na raiz do exercício:
-    - Exemplo: `pwd` -> o retorno vai ser algo tipo _/Users/maria/code/**sd-0x-project-lessons-learned**_
-- Crie os arquivos index.html e style.css:
-    - Exemplo: `touch index.html style.css`
-
-5. Adicione as mudanças ao _stage_ do Git e faça um `commit`
-
-- Verifique que as mudanças ainda não estão no _stage_:
-    - Exemplo: `git status` (devem aparecer listados os novos arquivos em vermelho)
-- Adicione o novo arquivo ao _stage_ do Git:
-    - Exemplo:
-        - `git add .` (adicionando todas as mudanças - _que estavam em vermelho_ - ao stage do Git)
-        - `git status` (devem aparecer listados os arquivos em verde)
-- Faça o `commit` inicial:
-    - Exemplo:
-        - `git commit -m 'iniciando o exercício. VAMOS COM TUDO :rocket:'` (fazendo o primeiro commit)
-        - `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
-
-6. Adicione a sua branch com o novo `commit` ao repositório remoto
-
-- Usando o exemplo anterior: `git push -u origin maria-soares-lessons-learned`
-
-7. Crie um novo `Pull Request` _(PR)_
-
-- Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-0x-project-lessons-learned/pulls)
-    - Clique no botão verde _"New pull request"_
-    - Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
-- Coloque um título para o seu _Pull Request_
-    - Exemplo: _"Cria tela de busca"_
-- Clique no botão verde _"Create pull request"_
-
-- Adicione uma descrição para o _Pull Request_, um título nítido que o identifique, e clique no botão verde _"Create pull request"_
-
- <img width="1335" alt="Exemplo de pull request" src="https://user-images.githubusercontent.com/42356399/166255109-b95e6eb4-2503-45e5-8fb3-cf7caa0436e5.png">
-
-- Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-0x-project-lessons-learned/pulls) e confira que o seu _Pull Request_ está criado
-
-</details>
-
-<details>
-
-<summary><strong>⌨️ Durante o desenvolvimento</strong></summary>
-
-Faça `commits` das alterações que você fizer no código regularmente, pois assim você garante visibilidade para o time da Trybe e treina essa prática para o mercado de trabalho :) ;
-
-- Lembre-se de sempre após um (ou alguns) `commits` atualizar o repositório remoto;
-- Os comandos que você utilizará com mais frequência são:
-    - `git status` _(para verificar o que está em vermelho - fora do stage - e o que está em verde - no stage)_;
-    - `git add` _(para adicionar arquivos ao stage do Git)_;
-    - `git commit` _(para criar um commit com os arquivos que estão no stage do Git)_;
-    - `git push -u origin nome-da-branch` _(para enviar o commit para o repositório remoto na primeira vez que fizer o `push` de uma nova branch)_;
-    - `git push` _(para enviar o commit para o repositório remoto após o passo anterior)_.
-
-</details>
-
-<details>
-<summary><strong>🎛 Checkstyle</strong></summary>
-
-Para garantir a qualidade do código, vamos utilizar neste exercício o `Checkstyle`. Assim o código estará alinhado com as boas práticas de desenvolvimento, sendo mais legível e de fácil manutenção! Para poder rodar o `Checkstyle` certifique-se de ter executado o comando `mvn install` dentro do repositório.
-
-Para rodá-los localmente no repositório, execute os comandos abaixo:
-
-```bash
-mvn checkstyle:check
-```
-
-Se a análise do `Checkstyle` encontrar problemas no seu código, tais problemas serão mostrados no seu terminal. Se não houver problema no seu código, nada será impresso no seu terminal.
-
-Você pode também instalar o plugin do `Checkstyle` na sua `IDE`. Para isso, volte na primeira seção do conteúdo.
-
-⚠️ **PULL REQUESTS COM ISSUES NO `Checkstyle` NÃO SERÃO AVALIADAS. ATENTE-SE PARA RESOLVÊ-LAS ANTES DE FINALIZAR O DESENVOLVIMENTO!** ⚠️
-
-</details>
-
-<details>
-<summary><strong>🛠 Testes</strong></summary>
-
-Para executar todos os testes basta rodar o comando:
-```bash
-mvn test
-```
-
-Para executar apenas uma classe de testes:
-```bash
-mvn test -Dtest="TestClassName"
-```
-
-</details>
-
-## Requisitos
-
-### 1. Sistema de Recursos Humanos
-
-<details>
-  <summary>Descrição</summary><br />
-
-Neste requisito, você implementará a parte de um sistema de recursos humanos para a Trybe! Sua função é implementar a classe `PessoaFuncionaria` com os atributos privados:
-
-- `nomeCompleto`: esse atributo é do tipo `String`;
-- `cpf`: esse atributo é do tipo `String`;
-- `endereco`: esse atributo é do tipo `String`;
-- `salario`: esse atributo é do tipo `double`;
-
-Implemente seu construtor para que, quando uma nova pessoa funcionária seja contratada na Trybe (o objeto seja instanciado), seus atributos já sejam inicializados. Você deverá também implementar os métodos `Getter`s e `Setter`s, exceto para o atributo `cpf`, imutável, que deve ter somente o método `Getter`.
-
-Requisitos:  
-1 - Crie um construtor para a PessoaFuncionaria que receba o nome, CPF, endereço e salário.  
-2 - Crie um método getter para o atributo nomeCompleto de PessoaFuncionaria.  
-3 - Crie um método setter para o atributo nomeCompleto de PessoaFuncionaria.  
-4 - Crie um método getter para o atributo cpf de PessoaFuncionaria.  
-5 - Crie um método getter para o atributo endereco de PessoaFuncionaria.  
-6 - Crie um método setter para o atributo endereco de PessoaFuncionaria.  
-7 - Crie um método getter para o atributo salario de PessoaFuncionaria.  
-8 - Crie um método setter para o atributo salario de PessoaFuncionaria.
-
-Por exemplo,
-
-Se a nova pessoa contratada for:
-
-- Nome: Maria da Silva;
-- CPF: 158.699.457-31;
-- Endereço: Rua da Aurora, 118;
-- Salário: 15000.
-
-Então o método `Getter` do atributo `cpf` deve retornar 158.699.457-31. Se executarmos o método `Setter` do atributo `salario` passando o valor 20000, o método `Getter` do atributo `salario` deve retornar 20000.0 (já que é do tipo `double`).
-
-</details>
 
 ### 2. Conta Poupança
 
