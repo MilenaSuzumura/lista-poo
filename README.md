@@ -81,7 +81,7 @@ A classe `ContaPoupanca` é focada em criar uma conta poupança, sacar, deposita
 
 </details>
 <details>
-<summary><strong>Cadastrar Conta Poupança</strong></summary>
+<summary><strong>💰 Cadastrar Conta Poupança 💰</strong></summary>
 
 Para cadastrar uma conta poupança deve chamar a classe `ContaPoupanca` mandando os parâmetros:
 1. `titularConta` é o nome do dono da conta e é do tipo `String`;
@@ -89,73 +89,56 @@ Para cadastrar uma conta poupança deve chamar a classe `ContaPoupanca` mandando
 
 </details>
 <details>
-<summary><strong>Depositar</strong></summary>
+<summary><strong>💵 Depositar 💵</strong></summary>
 
 Para depositar, deve chamar a função `depositar()` utilizando a conta criada, mandando o valor que gostaria de depositar que deve ser do tipo `double`. O código irá somar com o saldo da conta.
 
 </details>
 <details>
-<summary><strong>Sacar</strong></summary>
+<summary><strong>💸 Sacar 💸</strong></summary>
 
 Para sacar, deve chamar a função `sacar()` utilizando a conta criada, mandando o valor que gostaria de depositar que deve ser do tipo `double`. O código irá subtrair com o saldo da conta.
 
 </details>
 
 <details>
-<summary><strong>Mostrar o Saldo</strong></summary>
+<summary><strong>🧾 Mostrar o Saldo 🧾</strong></summary>
 
 Para mostrar o saldo, deve chamar a função `mostrarSaldo()` utilizando a conta criada.
 
 </details>
 <details>
-<summary><strong>Mostrar o Titular da Conta</strong></summary>
+<summary><strong>🧑‍💼 Mostrar o Titular da Conta 🧑‍💼</strong></summary>
 
 Para mostrar o nome do titular da conta, deve chamar a função `mostrarTitularConta()` utilizando a conta criada.
 
 </details>
 
-Readme Trybe
-
-
-### 3. Pessoa Usuárias
+### 🕵️‍♂️ Pessoa usuária 🕵️‍♂️
 
 <details>
-  <summary>Descrição</summary><br />
-  Na ACME Companhia Limitada os nomes das contas de pessoas usuárias são gerados com o nome e o sobrenome da pessoa separados por um ponto. Crie um sistema que gere o nome de uma pessoa usuária seguindo os seguintes critérios:
+    <summary><strong>🗒️ Sobre 🗒️</strong></summary>
 
-1. uma classe `Pessoa` que possui dois atributos **protegidos**, _nome_ e _sobrenome_.
-2. uma classe `PessoaUsuaria` que deve ter um construtor passando _nome_ e _sobrenome_.
-3. na classe `PessoaUsuaria` deve-se adicionar uma função `getPessoaUsuaria()`, que não recebe nenhum parâmetro, e retorna o nome.sobrenome.
+A classe `Pessoa` possui 2 atributos `protegidos`: `nome` e `sobrenome`.
 
-    Requisitos:  
-    1 - Valida se usuário executa regra  
-    2 - Valida se usuário é sub-classe de pessoa  
-    3 - Valida se usuário executa regra com nome nulo  
-    4 - Valida se usuário executa regra com sobrenome nulo  
-    5 - Valida se usuário executa regra com nome vazio  
-    6 - Valida se usuário executa regra com sobrenome vazio  
-    7 - Valida se método implementa na sub-classe  
-    8 - Valida se método implementado tem nome correto  
-    9 - Valida se atributos estão declarados  
-    10 - Valida se atributos declarados tem nomes corretos  
-
-Por exemplo,
-
-Iniciei a classe `new PessoaUsuaria("bruce", "wayne")`, então a saída da função `getPessoaUsuaria()` deve ser `bruce.wayne`.
-
-Iniciei a classe `new PessoaUsuaria(null, "wayne")`, então a saída da função `getPessoaUsuaria()` deve ser `Pessoa usuária inválida`. O mesmo deve ocorrer se o sobrenome for nulo.
-
-Iniciei a classe `new PessoaUsuaria("", "wayne")`, então a saída da função `getPessoaUsuaria()` deve ser `Pessoa usuária inválida`. O mesmo deve ocorrer se o sobrenome for vazio.
-
+A classe `PessoaUsuaria` extende a classe `Pessoa` e é focada em validar se `nome` e `sobrenome` do novo usuário são válidos ou não.
 
 </details>
 
 <details>
-<summary><strong> 🗣 Nos dê feedbacks sobre o exercício!</strong></summary>
+    <summary><strong>🙆‍♀️ Cadastrar Novo Usuário 🙆‍♀️</strong></summary>
 
-Ao finalizar e submeter o exercício, não se esqueça de avaliar sua experiência preenchendo o [formulário](https://be-trybe.typeform.com/to/ZTeR4IbH#cohort_hidden=CH1&template=betrybe/java-0x-exercicio-lista-poo).
-**Leva menos de 3 minutos!**
+Para cadastrar uma nova pessoa usuária deve chamar a classe `PessoaUsuaria` mandando os parâmetros:
+1. `nome` é o nome do usuário e é do tipo `String`;
+2. `sobrenome` é o sobrenome do usuário e é do tipo `String`.
 
 </details>
 
----
+<details>
+    <summary><strong>🙆 Validar Novo Usuário 🙆</strong></summary>
+
+Para validar o novo usuário, deve chamar a função `getPessoaUsuaria()` utilizando a pessoa usuária criada.
+* Caso o usuário seja inválido(alguns dos atributos seja null ou uma String vazia), a mensagem que receberá será: `Pessoa usuária inválida`.
+* Se for válida, a mensagem será  nome.sobrenome. **Exemplo:** `milena.suzumura`
+
+</details>
