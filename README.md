@@ -30,6 +30,8 @@ Execute: `maven install`
 </details>
 -->
 
+<br>
+
 ## 👥 Informações gerais 👥
 
 ### 💼 Sistema de Recursos Humanos 💼️
@@ -72,6 +74,8 @@ Para alterar as informações do funcionário que você criou, pegue o funcioná
 <strong>OBS:</strong> O `CPF` NÃO PODE SER ALTERADO.
 </details>
 
+<br>
+
 ### 🏦 Conta Poupança 🏦
 
 <details>
@@ -113,6 +117,8 @@ Para mostrar o saldo, deve chamar a função `mostrarSaldo()` utilizando a conta
 Para mostrar o nome do titular da conta, deve chamar a função `mostrarTitularConta()` utilizando a conta criada.
 
 </details>
+
+<br>
 
 ### 🕵️‍♂️ Pessoa usuária 🕵️‍♂️
 
